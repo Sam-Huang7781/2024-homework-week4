@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Noto Sans TC", "Roboto", "PingFang TC", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+@media (max-width: 767px) {
+  .container {
+    // max-width: 720px;
+    padding: 0 12px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    // max-width: 570px;
+    padding: 0 12px;
+  }
+}
+
+/* 字體 */
+.fz-4 {
+  font-size: 16px;
+}
+.fz-5 {
+  font-size: 20px;
+}
+.fz-6 {
+  font-size: 24px;
+}
+.fz-7 {
+  font-size: 28px;
+}
+.fz-8 {
+  font-size: 32px;
+}
+.fz-9 {
+  font-size: 36px;
+}
+
+.fz-12 {
+  font-size: 48px;
+}
+.fz-16 {
+  font-size: 64px;
+}
+.fw-b {
+  font-weight: 500;
+}
+
+// flex
+.ta-c {
+  text-align: center;
+}
+.ta-l {
+  text-align: left;
+}
+.d-flex {
+  display: flex;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+.jcc {
+  justify-content: center;
+}
+.aic {
+  align-items: center;
+}
+.flx-direction-col {
+  flex-direction: column;
+}
+.flx-wrap{
+    flex-wrap: wrap;
+}

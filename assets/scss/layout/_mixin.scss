@@ -1,0 +1,15 @@
+@mixin pad {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin mobile-lg {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+@mixin mobile-sm {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
