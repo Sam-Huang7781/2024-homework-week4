@@ -3,9 +3,10 @@
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
 // @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "./layout/reset.scss";
-@import "./layout/utils.scss";
-@import "./layout/variables.scss";
+@import "./base/reset.scss";
+@import "./base/base.scss";
+@import "./utils/utils.scss";
+@import "./utils/variables.scss";
 @import "./layout/grid.scss";
 @import "./layout/mixin.scss";
 
@@ -14,3 +15,5 @@
 @import "./pages/optical.scss";
 @import "./pages/sunglasses.scss";
 @import "./pages/branch.scss";
+@import "./pages/store.scss";
+@import "./pages/blog.scss";

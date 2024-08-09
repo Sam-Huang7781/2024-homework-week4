@@ -60,6 +60,7 @@
 }
 @media (max-width: 992px) {
   .footer {
+    padding: 48px 36px 32px; /* 等同於 padding: 48px 12px 32px 12px; */
     .container {
       padding: 0;
       max-width: 960px;

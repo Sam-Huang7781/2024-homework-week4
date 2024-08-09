@@ -11,34 +11,41 @@
     justify-content: center;
     align-items: flex-end;
     color: white;
-    p{
+    h2 {
+      font-weight: bold;
+    }
+    p {
       font-weight: 500;
     }
     .buy {
+      color: white;
+      display: block;
       padding: 6px 12px;
-      width: 104px;
+      width: 106px;
       background-color: #aa0601;
+    }
+    .buy:hover{
+      background-color: #650300;
+      border: 1px white solid;
+    }
+  }
+  @include pad {
+    background-image: url("../images/home-header-sm.png");
+  }
+  @include mobile-lg {
+    height: 396px;
+    .container {
+      padding: 0 16px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 16px;
     }
   }
 }
 
-@media (max-width: 767px) {
-  .banner {
-    background-image: url("../images/home-header-sm.png");
-  }
-}
-
-@media (max-width: 576px) {
-  .banner {
-    height: 396px;
-  }
-  h2 {
-    font-size: 24px;
-  }
-  p {
-    font-size: 16px;
-  }
-}
 /* slogan */
 .slogan {
   padding: 80px 24px;
@@ -59,10 +66,7 @@
       padding: 12px;
     }
   }
-}
-
-@media (max-width: 992px) {
-  .slogan {
+  @include pad {
     .content {
       ul {
         flex-wrap: wrap;
@@ -72,10 +76,7 @@
       }
     }
   }
-}
-
-@media (max-width: 576px) {
-  .slogan {
+  @include mobile-lg {
     padding: 40px 24px;
     .content {
       .fz-12 {
@@ -110,23 +111,20 @@
     opacity: 0.8;
     transition: 0.5s;
   }
-}
-@media (max-width: 992px) {
-  .classic {
+  @include desktop {
     h2 {
       padding-bottom: 24px;
     }
     .model-wrap {
       flex-direction: column;
+      flex-wrap: wrap;
     }
     img {
       width: 336px;
       margin-top: 24px;
     }
   }
-}
-@media (max-width: 576px) {
-  .classic {
+  @include mobile-lg {
     padding: 40px 0;
     h2 {
       font-size: 24px;
@@ -155,9 +153,7 @@
       border: 1px rgba(0, 0, 0, 0.1) solid;
     }
   }
-}
-@media (max-width: 992px) {
-  .co-branding {
+  @include pad {
     background-image: url("../images/index-bg-md.png");
     .column {
       flex-direction: column;
@@ -167,9 +163,7 @@
       }
     }
   }
-}
-@media (max-width: 576px) {
-  .co-branding {
+  @include mobile-lg {
     background-image: url("../images/index-bg-sm.png");
     padding: 40px 0;
     h2 {
@@ -198,16 +192,13 @@
     p {
       padding-bottom: 72px;
     }
-    h3 {
+    time {
       font-size: 14px;
       color: #707070;
-      font-family: "roboto";
       font-weight: 500;
     }
   }
-}
-@media (max-width: 992px) {
-  .costumer {
+  @include desktop {
     padding: 40px 0;
     .card-wrap {
       justify-content: center;
@@ -218,10 +209,7 @@
       width: 46.5%;
     }
   }
-}
-@media (max-width: 576px) {
-  .costumer {
-    padding: 40px 0;
+  @include mobile-lg {
     .card-wrap {
       margin-top: -24px;
     }
@@ -247,6 +235,24 @@
   p {
     font-size: 20px;
     padding-bottom: 24px;
+  }
+  @include pad {
+    .container {
+      width: 576px;
+    }
+    h2 {
+      padding-bottom: 24px;
+    }
+  }
+  @include mobile-lg {
+    .container {
+      width: 348px;
+      padding: 40px 0;
+    }
+    h2 {
+      font-size: 24px;
+      padding-bottom: 24px;
+    }
   }
 }
 .form {
@@ -286,17 +292,7 @@
       transition: 0.2s;
     }
   }
-}
-@media (max-width: 767px) {
-  .contact {
-    .container {
-      width: 576px;
-    }
-    h2 {
-      padding-bottom: 24px;
-    }
-  }
-  .form {
+  @include pad {
     p {
       font-size: 16px;
     }
@@ -309,19 +305,7 @@
       }
     }
   }
-}
-@media (max-width: 576px) {
-  .contact {
-    .container {
-      width: 348px;
-      padding: 40px 0;
-    }
-    h2 {
-      font-size: 24px;
-      padding-bottom: 24px;
-    }
-  }
-  .form {
+  @include mobile-lg {
     p {
       font-size: 16px;
     }

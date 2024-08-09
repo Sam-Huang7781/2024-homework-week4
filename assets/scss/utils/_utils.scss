@@ -1,43 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  line-height: 1.5;
-  font-family: "Noto Sans TC", "Roboto", "PingFang TC", sans-serif;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-
-a {
-  display: inline-block;
-  text-decoration: none;
-}
-
-.container {
-  max-width: 1320px;
-  margin: 0 auto;
-  padding: 0 12px;
-}
-@media (max-width: 767px) {
-  .container {
-    // max-width: 720px;
-    padding: 0 12px;
-  }
-}
-@media (max-width: 576px) {
-  .container {
-    // max-width: 570px;
-    padding: 0 12px;
-  }
-}
-
 /* 字體 */
 .fz-4 {
   font-size: 16px;
@@ -67,6 +27,9 @@ a {
 .fw-b {
   font-weight: 500;
 }
+.fw-bolder{
+  font-weight: bold;
+}
 
 // flex
 .ta-c {
@@ -89,6 +52,9 @@ a {
 }
 .flx-direction-col {
   flex-direction: column;
+}
+.flx-direction-reverse {
+  flex-direction:row-reverse
 }
 .flx-wrap{
     flex-wrap: wrap;

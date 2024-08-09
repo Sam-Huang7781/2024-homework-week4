@@ -23,3 +23,9 @@
 .bg-dark {
   background-color: #000000;
 }
+
+$border-dark: rgba(#c6538c, 0.8);
+
+.alert {
+  border: 1px solid $border-dark;
+}

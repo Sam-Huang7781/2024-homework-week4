@@ -1,0 +1,89 @@
+.store {
+  max-width: 100%;
+  .card-list {
+    flex-wrap: nowrap;
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+  .card {
+    max-width: 41.6666666667%;
+    margin: 0;
+    img {
+      width: 526px;
+    }
+    ul {
+      padding: 0;
+    }
+    li {
+      padding-left: 24px;
+    }
+  }
+  .map {
+    max-width: 58.3333333333%;
+    margin-left: 24px;
+  }
+  @include desktop {
+    .container {
+      padding: 0 72px;
+    }
+    .card-list {
+      flex-wrap: wrap;
+    }
+    .card {
+      border: none;
+      max-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      img {
+        max-width: 46.5%;
+        margin-right: 24px;
+      }
+      ul {
+        border: 1px solid #ced4da;
+        max-width: 46.5%;
+      }
+    }
+    .map {
+      max-width: 100%;
+      margin: 0;
+      margin-top: 24px;
+    }
+  }
+  @include pad {
+    .container {
+      max-width: 375px;
+      padding: 0 12px;
+      h2 {
+        margin-top: 40px;
+        margin-bottom: 24px;
+        font-size: 24px;
+      }
+      form {
+        margin-bottom: 12px;
+        label {
+          font-size: 16px;
+          margin-right: 8px;
+        }
+        select {
+          width: 276px;
+        }
+      }
+    }
+    .card-list {
+      flex-wrap: wrap;
+      max-width: 348px;
+      margin-top: 24px;
+      margin-bottom: 64px;
+    }
+    .card {
+      img {
+        max-width: 100%;
+      }
+      ul {
+        border: 1px solid #ced4da;
+        max-width: 100%;
+      }
+    }
+  }
+}
